@@ -4,27 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <style>
-    body {
-      margin: 0;
-      background-color: #8f57fd;
-      font-family: "Muli", sans-serif;
-    }
-    .header {
-      width: 100%;
-      height: 80px;
-      background-color: #8f57fd;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .header__img {
-      width: 200px;
-      margin-top: 10px;
-      margin-left: 10px;
-    }
-  </style>
   <body>
     <header class="header">
       <img class="header__img" src="logo.png" alt="" />
@@ -37,14 +18,14 @@
             <input class="input" type="text" placeholder="Correo">
             <input class="input" type="password" placeholder="Contraseña">
             <button class="button">Iniciar Sesion</button>
-            <div class="login__container--remeber-me">
+            <div class="login__container--remember-me">
                 <label>
                     <input type="checkbox" name="" id="cbox1" value="checkbox">Recuerdame
                 </label>
                 <a href="#">Olvide mi contraseña</a>
             </div>
         </form>
-        <div class="login__conteiner--social-media">
+        <div class="login__container--social-media">
             <div><img src="assets/google.png" alt="Google">Inicia sesion con google</div>
             <div><img src="assets/twitter.png" alt="Twitter">Inicia sesion con twitter</div>
         </div>
