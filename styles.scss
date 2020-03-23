@@ -3,6 +3,7 @@
 $color_white: white;
 $color_green: #21c08b;
 $color_purple: #ab88ff;
+$font: 'Muli', sans-serif;
 
 /* CLASES */
 @mixin tamanio ($width, $height){
@@ -11,10 +12,10 @@ $color_purple: #ab88ff;
 }
 
 body{
+  @include tamanio(100%, 100vh );
   margin:0;
   background: linear-gradient($color_green, $color_purple);
-  font-family: 'Muli', sans-serif;
-  @include tamanio(100%, 100vh );
+  font-family: $font;
 }
 /* Estilos header */
 .header{
@@ -82,7 +83,7 @@ body{
   border: 2px solid $color_white;
   border-radius: 40px;
   color:$color_white;
-  font-family: 'Muli', sans-serif;
+  font-family: $font;
   font-size: 16px;
   padding: 0px 20px;
   outline: none;
@@ -218,7 +219,7 @@ body{
   border-top: 0px;
   border-right: 0px;
   border-bottom: 2px solid $color_white;
-  font-family: "Muli", sans-serif;
+  font-family: $font;
   font-size: 16px;
   margin-bottom: 20px;
   padding: 0px 20px;
@@ -235,7 +236,7 @@ body{
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-  font-family: "Muli", sans-serif;
+  font-family: $font;
   height: 50px;
   border: none;
   letter-spacing: 1px;
@@ -244,7 +245,7 @@ body{
 
 /* 404 */
 .no_found{
-  font-family: "Muli", sans-serif;
+  font-family: $font;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -277,7 +278,7 @@ body{
 .footer a{
   color: $color_white;
   font-size: 14px;
-  font-family: 'Muli', sans-serif;
+  font-family: $font;
   padding-left: 30px;
   text-decoration: none;
 }
